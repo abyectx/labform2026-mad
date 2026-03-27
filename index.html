@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio - Vera Sanguis</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+  </head>
+  <body class="bg-cover">
+    <main>
+      <section class="flex-col">
+        <h1>Laboratorio de Poesía</h1>
+        <h2>Abril y Mayo 2026</h2>
+        <form
+          action="https://formspree.io/f/mykwpvvr"
+          method="POST"
+          onsubmit="handleSubmit(event)"
+        >
+          <label>
+            Nombre o alias:
+            <input
+              type="text"
+              name="alias"
+              required
+              placeholder="Mr Sunshine"
+            />
+          </label>
+          <label>
+            Email de contacto:
+            <input
+              type="email"
+              name="email"
+              placeholder="sunshine@somemail.com"
+            />
+          </label>
+          <!--  <label for="attendance">Asistencia</label>
+          <select id="attendance" name="attendance" required>
+            <option value="Sí">Sí</option>
+            <option value="Tal vez">Tal vez</option>
+          </select> -->
+          <button type="submit" id="submit-btn">Enviar</button>
+        </form>
+        <footer>
+          <i>
+            Contacto: <a href="mailto:vera.sanguis@proton.me">Vera Sanguis</a>
+          </i>
+          <u style="margin-top: 2rem">
+            Agradecemos avisar cambios en la asistencia.
+          </u>
+          <span style="font-size: 0.8rem"> (Pintura: Goya 'Aquelarre') </span>
+        </footer>
+      </section>
+    </main>
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault();
+        alert("Formulario enviado! :)");
+        event.target.submit();
+      }
+    </script>
+  </body>
+</html>
